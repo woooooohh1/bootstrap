@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자바스크립트 json데이터 출력하기</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <style>
+    table{
+      border-collapse:collapse;
+      border:1px solid #333;
+      width:1000px;
+      margin:0px auto 30px auto;
+    }
+    table caption{
+      font-weight:bold;
+      font-size:20px;
+      padding:20px 0px;
+    }
+    table td, table th{
+      border:1px solid #333;
+      line-height:34px;
+      text-align:center;
+    }
+  </style>
+  <script>
+    $(function(){
+      $.getJSON('./data/test_drive.json',function(data){      
+        let html = '<table class="car_reverse"><caption>시승신청예약</caption><tr><th>번호</th><th>이름</th><th>전화번호</th><th>SNS</th><th>이메일</th><th>지역</th><th>시승 차량</th><th>보유차량</th><th>시승날짜</th></tr>'; 
+        for(key in data){
+          html+=`<tr>`;
+            for(let i in data[key]){
+              html+=`<td>${data[key][i]}</td>`;
+            }
+          html+=`</tr>`;
+        }
+        html+=`</table>`;
+        $('.list').html(html);
+        
+        
+        
+        
+        
+          // document.write('<table>');
+        // document.write('<caption> 시승신청예약 </caption>');
+        // document.write('<th>번호</th><th>이름</th><th>전화번호</th><th>SNS</th><th>이메일</th><th>지역</th><th>시승 차량</th><th>보유차량</th><th>시승날짜</th>');
+        // for(key in data){
+        //   document.write('<tr>');
+        //   document.write('<td>' +data[key].num+'</td>');
+        //   document.write('<td>' +data[key].name+'<td>');
+        //   document.write('<td>'+data[key].phone+'<td>');
+        //   document.write('<td>'+data[key].sns+'<td>');
+        //   document.write('<td>'+data[key].email+'<td>');
+        //   document.write('<td>'+data[key].s_car+'<td>');
+        //   document.write('<td>'+data[key].my_car+'<td>');
+        //   document.write('<td>'+data[key].s_date+'<td>');
+        //   document.write('</tr>');
+        //   }
+        //   document.write('</table>');
+
+
+
+          // document.write('<table>');
+        // document.write('<caption> 시승신청예약 </caption>');
+        // for(let i=0;i<data[key].num.length;i++){
+        //   document.write('<tr>');
+        //   for(let j=1;j<=data[key];j++){
+        //     document.write('<td>'+data[key]+'</td>');
+        //   }
+        //   document.write('</tr>');
+        // }
+      });
+    });
+  </script>
+</head>
+<body>
+  <h2>자바스크립트 json데이터 출력하기</h2>
+  <p>닷홈 SQL데이터 베이스에 저장된 'test_drive'테이블의 자료를 'json'파일로 저장하여 자바스크립트로 출력해보기</p>
+
+  <article class="list"></article>
+</body>
+</html>
