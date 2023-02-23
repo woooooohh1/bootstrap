@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>자바스크립트 & 제이쿼리</title>
+  <title>부트스트랩</title>
   <style>
     *{margin :0px;padding: 0px;}
       body{
@@ -13,7 +13,7 @@
         color:#333333;
       }
       h1,h2{text-align: center;}
-      h1 img{width:140px;}
+      h1 img{width:210px;}
       h2{line-height: 40px;}
 
       /* 테두리선 */
@@ -26,6 +26,7 @@
         background-color: #222222;
         
       }
+      .t_1{margin-top: -40px;}
       dl{text-indent: 10px;}
       dt{
         font-size: 14px;
@@ -61,11 +62,11 @@
 </head>
 <body>
   <header>
-    <h1><a href="./index.html" title="처음으로 바로가기"><img src="./jquery.png" alt="jquery로고"></a></h1>
+    <h1><a href="./index.html" title="처음으로 바로가기"><img src="./bootstrap.png" alt="bootstrap로고"></a></h1>
   </header>
 
   <main>
-    <h2>부트스트랩! bootstrap</h2>
+    <h2 class="t_1">부트스트랩! bootstrap</h2>
     <section class="border01">
       <dl>
         <dt class="bgcolor01">1일차 - bootstrap 소개와 장 단점</dt>
@@ -76,35 +77,32 @@
       <dt class="bgcolor01">2일차 - bootstrap 스타일 서식</dt>
       <dd><a href="./0220/01그리드레이아웃.html" title="부트스트랩 그리드레이아웃">01_그리드레이아웃(반응형)</a></dd>
       <dd><a href="./0220/02부트스트랩.html" title="부트스트랩 텍스트관련">02_텍스트관련</a></dd>
-      <dd><a href="./0109/exec01.html" title="실습에제">실습예제 쿠팡 슬라이드 업 효과</a></dd>
+      <dd><a href="./0220/03부트스트랩_테이브.html" title="부트스트랩 테이블">03_테이블관련</a></dd>
+      <dd><a href="./0220/04부트스트랩_이미지.html" title="부트스트랩 이미지">04_이미지관련</a></dd>
+      <dd><a href="./0220/exec.html" title="반응형 갤러리">실습예제_반응형 갤러리</a></dd>
     </dl>
     <dl>
-      <dt class="bgcolor01">3일차 - 제이쿼리 fadeIn_Out_slide</dt>
-      <dd><a href="./0110/fadeIn_Out_slide.html" title="제이쿼리 이벤트">01_jquery_fadeIn_Out_slide</a></dd>
-      <dd><a href="./0110/exec.html" title="제이쿼리 효과">02_jquery_fadeIn_Out_slide실습예제</a></dd>
-      
+      <dt class="bgcolor01">3일차 - bootstrap 스타일 서식</dt>
+      <dd><a href="./0221/05_점보트론.html" title="점보트론">05_점보트론</a></dd>
+      <dd><a href="./0221/06_경고메시지와 닫기.html" title="경고메시지와 닫기">06_경고메시지와 닫기</a></dd>
+      <dd><a href="./0221/07_버튼과08_버튼그룹.html" title="버튼,버튼그룹">07_버튼과 버튼 그룹</a></dd>
+      <dd><a href="./0221/exec.html" title="실습예제_모달창">실습예제_모달창 로그인</a></dd>
     </dl>
     <dl>
-      <dt class="bgcolor01">4일차 - 제이쿼리 animate 메서드</dt>
-      <dd><a href="./0111/01_animate매서드.html" title="애니메이트 메서드">01_jquery_animate</a></dd>
-      <dd><a href="./0111/exec01.html" title="애니메이트 메서드 실습예제">02_jquery_animate실습예제</a></dd>
-      
+      <dt class="bgcolor01">4일차 - bootstrap 스타일 서식</dt>
+      <dd><a href="./0222/10_icon.html" title="아이콘 삽입">08_SVG,아이콘 삽입</a></dd>
+      <dd><a href="./0222/11_휘장과 라벨.html" title="휘장과 라벨">09_휘장과 라벨</a></dd>
+      <dd><a href="./0222/12_프로그래스바.html" title="프로그래스바">10_프로그래스바</a></dd>
+      <dd><a href="./0222/13_14_페이지네이션.html" title="페이지네이션">11_페이지네이션</a></dd>
+      <dd><a href="./0222/exec.html" title="실습예제">실습예제_공지사항</a></dd>
     </dl>
-    <dl>
-      <dt class="bgcolor01">11일차 - 제이쿼리 문서객체조작</dt>
-      <dd><a href="./0126/jquery_DOM_class.html" title="01_제이쿼리 문서객체조작(class)">01_제이쿼리 문서객체조작(class)</a></dd>
-      <dd><a href="./0126/jquery_DOM_add.html" title="02_제이쿼리 문서객체조작(내용추가,삭제)">02_제이쿼리 문서객체조작(내용추가,삭제)</a></dd>
-      <dd><a href="./0126/jquery_DOM_modal_window.html" title="03_제이쿼리 모달윈도(쿠키)">03_제이쿼리 모달윈도(쿠키)</a></dd>
-      <dd><a href="./0126/jquery_DOM_modal_window1.html" title="03_제이쿼리 모달윈도(쿠키)">03_제이쿼리 모달윈도(쿠키)</a></dd>
-      <dd><a href="./0126/jquery_DOM_image.html" title="02_제이쿼리 흘러가는 이미지 슬라이드(협력사 배너)">02_제이쿼리 흘러가는 이미지 슬라이드(협력사 배너)</a></dd>
-      
-    </dl>
-    <dl>
-      <dt class="bgcolor01">12일차 - 제이쿼리 문서객체조작-제이쿼리 이미지 갤러리</dt>
-      <dd><a href="./0127/gallery.html" title="01_제이쿼리 이미지 갤러리(캡션,정렬,모달,제목,페이지수)">01_제이쿼리 이미지 갤러리(캡션,정렬,모달,제목,페이지수)</a></dd>
-      
-      
-    </dl>
+    
+    <footer>
+      <img src="./instagram_logo.png" alt="인스타그램로고"><p>woooooo_hh</p>
+      <address>
+        <p>Copyright&copy;2022</p>
+      </address>
+    </footer>
 
 </body>
 </html>

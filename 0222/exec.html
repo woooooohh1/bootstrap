@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>실습예제 공지사항</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+</head>
+<body>
+  <div style="width: 800px; margin: 0 auto;">
+    <br>
+    <table class="table table-striped table-hover">
+      <thead class="table-info">
+        <tr>
+        <th>번호</th><th class="text-center">제 &nbsp; 목</th><th>글쓴이</th><th class="text-primary">날짜</th><th class="text-primary">조회</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>13</td><td class="text-primary">새로운 게시물 <span class="badge text-bg-dark">n</span></td><td class="text-secondary">최고관리자</td><td>14:56</td><td>3</td>
+        </tr>
+        <tr>
+          <td>12</td><td class="text-primary">비밀 게시물 <span class="bi bi-lock-fill text-dark"></span></td><td class="text-secondary">최고관리자</td><td>14:52</td><td>2</td>
+        </tr>
+        <tr>
+          <td>11</td><td class="text-primary">뜨거운 <span class="bg-light border border-primary rounded-circle">&nbsp;?&nbsp;</span>&nbsp; 게시물 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-fire text-dark" viewBox="0 0 16 16">
+            <path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16Zm0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15Z"/>
+          </svg></td><td class="text-secondary">최고관리자</td><td>12:36</td><td>1</td>
+        </tr>
+        <tr>
+          <td>10</td><td class="text-primary">파일이 첨부된 게시물 <span class="bi bi-download text-dark"></span></td><td class="text-secondary">최고관리자</td><td>14:56</td><td>2</td>
+        </tr>
+        <tr>
+          <td>9</td><td class="text-primary">리플이 달린 게시물 <span class="bg-light border border-primary rounded-circle">&nbsp;3&nbsp;</span></td><td class="text-secondary">최고관리자</td><td>14:56</td><td>2</td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <button type="button" class="btn btn-primary text-center float-end">
+      <span class="bi bi-pencil-fill"></span>글쓰기
+    </button>
+  
+    <br>
+    <ul class="pagination justify-content-center">
+      <li class="page-item active"><a href="#" class="page-link">1</a></li>
+      <li class="page-item"><a href="#" class="page-link">2</a></li>
+      <li class="page-item"><a href="#" class="page-link">3</a></li>
+      <li class="page-item"><a href="#" class="page-link">
+        <i class="bi bi-arrow-right-short"></i>
+      </a></li>
+    </ul>
+    <form action="" class="text-center">
+      <fieldset>
+        <select name="name" id="name" class="w-25 p-1">
+          <option value="">제목</option>
+          <option value="">번호</option>
+          <option value="">글쓴이</option>
+          <option value="">날짜</option>
+          <option value="">조회수</option>
+        </select>
+        <input type="text" class="p-1 w-50">
+        <button class="border-light p-1"><span class="bi bi-search"></span> 검색</button>
+        &nbsp;&nbsp;&nbsp;
+        <input type="radio" name="check" id="s01" checked><label for="s01">and</label>
+        <input type="radio" name="check" id="s02"><label for="s02"> or</label>
+      </fieldset>
+    </form>
+  </div>
+</body>
+</html>
